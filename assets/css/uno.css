@@ -925,9 +925,9 @@ html {
   max-height: 100%; }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto Slab", sans-serif;
   font-size: 1em;
-  color: #666666; }
+  color: #444;/*#666666;*/ }
 
 ::selection {
   background: #fae3df; }
@@ -954,12 +954,13 @@ h5 {
   margin-top: .8em;/*.8em;*/
   margin-bottom: .8em;/*.4em;*/
   font-family: "Roboto Slab", serif;
-  font-weight: lighter;
-  color: #333333;
+  /*font-weight: lighter*/;
+  color: #111/*#333333*/;
   -webkit-font-smoothing: antialiased; }
 
 h1 {
   margin-top: 0;
+  margin-bottom: 0.5em;
   font-size: 3.2em;
   line-height: 1.2em;
   letter-spacing: .05em; }
@@ -995,7 +996,7 @@ blockquote {
   padding-left: 2em;
   margin-left: 0em;
   background: transparent; /*#f8f8f8;*/
-  border-left: 6px solid #cadadf; /*1px solid #eeeeee;*/
+  border-left: 6px solid #b1c1c6; /*1px solid #eeeeee;*/
   /* remo border-radius: 3px;*/
   font-family: "Roboto Slab", serif;
   font-weight: lighter;
@@ -1055,7 +1056,7 @@ pre {
   .time a,
   .author a,
   .tags a {
-    color: #333333; }
+    color: #000;/*#333333;*/ }
     .date a:hover,
     .time a:hover,
     .author a:hover,
@@ -1065,7 +1066,7 @@ pre {
 .excerpt {
   margin: 0;
   font-size: .9em;
-  color: #777777; }
+  color: #555/*#777777*/; }
 
 .intro {
   font-family: "Roboto Slab", serif;
@@ -1104,12 +1105,9 @@ pre {
 /* Experimental */
 
 html, body {
-  /*background: url(http://www.skalon.com/sker.jpg) center center fixed no-repeat;
-  background-size: cover;*/
   width: 100%; }
 
 .content-wrapper {
-  /*background: rgba(255, 255, 255, 0.5);*/
   z-index: 800;
   min-height: 100%;
   height: auto;
@@ -1124,9 +1122,9 @@ html, body {
 .footer {
   display: block;
   padding: 2em 0 0 0;
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #a1a1a1;
   font-size: .7em;
-  color: #b3b3b3; }
+  color: #555;/*#b3b3b3;*/ }
 
 .footer__copyright {
   display: block;
@@ -1149,13 +1147,13 @@ hr {
 .section-title__divider {
   width: 30%;
   margin: 2.2em 0 2.1em 0;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #a1a1a1; }
 
 .hidden {
   display: none !important; }
 
 .post-comments {
-  border-top: 2px solid #dddddd;
+  border-top: 2px solid #a1a1a1;
   padding: 60px 0; }
 
 .post-meta {
@@ -1190,7 +1188,7 @@ hr {
   display: block;
   width: 30%;
   margin: 2em 0;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #a1a1a1; }
 
 .panel {
   display: table;
@@ -1246,6 +1244,7 @@ hr {
   margin-bottom: .2em; }
 
 .panel-cover__description {
+  /*font-family: "Raleway", sans-serif;*/
   margin: 0 30px; }
 
 .panel-cover__divider {
@@ -1458,7 +1457,7 @@ i {
   font-size: 1.5em;
   line-height: 1.3em; }
   .post-list__post-title a {
-    color: #333333; }
+    color: #000/*#333333*/; }
     .post-list__post-title a:hover {
       color: #b9301c; }
 
@@ -1478,7 +1477,7 @@ i {
 .post-list__divider {
   width: 30%;
   margin: 2.2em 0 2.1em 0;
-  border-top: 1px solid #dddddd; }
+  border-top: 1px solid #a1a1a1; }
 
 *:focus {
   outline: none; }
@@ -1499,7 +1498,7 @@ input[type="tel"] {
   width: 240px;
   padding: 1em 1em;
   background: #FFF;
-  border: 1px solid #dddddd;
+  border: 1px solid #a1a1a1;
   border-radius: 3px;
   font-size: .9em;
   color: #666666; }
