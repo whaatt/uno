@@ -929,11 +929,22 @@ body {
   font-size: 1em;
   color: #444;/*#666666;*/ }
 
+* {
+  position: relative; }
+
 ::selection {
-  background: #fae3df; }
+  color: black;
+  background: rgba(168,209,255,0.99);/*#a8d1ff;*/ }
+
+img::selection {
+  background: rgba(168,209,255,1.0) !important; }
 
 ::-moz-selection {
-  background: #fae3df; }
+  color: black;
+  background: rgba(168,209,255,0.99);/*#a8d1ff;*/ }
+
+img::-moz-selection {
+  background: rgba(168,209,255,1.0) !important; }
 
 a {
   text-decoration: none;

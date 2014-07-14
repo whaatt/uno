@@ -1,5 +1,22 @@
-{{!< defaultError}}
+{{!< default}}
+  {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
+    <title>Page Not Found</title>
+    <meta name="description" content="In other words, I couldn't find your page.">
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Page Not Found"/>
+    <meta property="og:site_name" content="{{@blog.title}}"/>
+    <meta property="og:description" content="In other words, I couldn't find your page."/>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Page Not Found"/>
+    <meta name="twitter:description" content="In other words, I couldn't find your page."/>
+    <meta name="twitter:creator" content="@whaatt"/>
+  {{/contentFor}}
+  
   <article class="post-container post-container--single">
 
     <header class="post-header">

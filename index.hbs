@@ -1,11 +1,29 @@
 {{!< default}}
+  {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
+    <title>{{meta_title}}</title>
+    <meta name="description" content="{{meta_description}}">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="{{meta_title}}"/>
+    <meta property="og:description" content="{{meta_description}}"/>
+    <meta property="og:site_name" content="{{meta_title}}"/>
+    <meta property="og:url" content="{{@blog.url}}/"/>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="{{meta_title}}"/>
+    <meta name="twitter:description" content="{{meta_description}}"/>
+    <meta name="twitter:creator" content="@whaatt"/>
+  {{/contentFor}}
 
   <div class="main-post-list">
 
     <ol class="post-list">
       {{#foreach posts}}
       <li>
-        <h2 class="post-list__post-title post-title"><a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a></h2>
+        <h2 class="post-list__post-title post-title"><a href="{{url}}">{{{title}}}</a></h2>
         <p class="excerpt">{{excerpt}}&hellip;</p>
         <div class="post-list__meta"><time datetime="{{date format="DD MMM YYYY"}}" class="post-list__meta--date date">{{date format="DD MMM YYYY"}}</time> &#8226; <span class="post-list__meta--tags tags">{{tags prefix="on "}}</span></div>
         <hr class="post-list__divider" />
