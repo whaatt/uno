@@ -3,21 +3,9 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    {{! Meta }}
+    
     {{{block "meta"}}}
-    <!-- <title>{{meta_title}}</title>
-
-    <meta name="description" content="{{meta_description}}">
-
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="{{meta_title}}">
-    <meta name="twitter:description" content="{{meta_description}}">
-
-    <meta property="og:type" content="article">
-    <meta property="og:title" content="{{meta_title}}">
-    <meta property="og:description" content="{{meta_description}}"> -->
-
+    
     <meta name="HandheldFriendly" content="True">
     <meta name="MobileOptimized" content="320">
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -27,12 +15,10 @@
     <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
     <link href="/apple-touch-icon-precomposed.png" rel="apple-touch-icon">
 
-    {{! Styles and Scripts }}
     <link rel="stylesheet" type="text/css" href="{{asset "css/uno.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "highlights/vs.css"}}" />
     <link rel="stylesheet" type="text/css" href="{{asset "highlights/common.css"}}" />
 
-    {{! Ghost Magic }}
     {{ghost_head}}
 
 </head>
@@ -57,9 +43,6 @@
     {{! Ghost Footer Magic }}
     {{ghost_foot}}
 
-    {{! The main JavaScript file for Casper }}
-    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>{{! The main JavaScript file for Casper }}
-    <script type="text/javascript" src="{{asset "js/main.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/highlight.pack.js"}}"></script>  
     <script>hljs.initHighlightingOnLoad();</script>  
     <script>

@@ -1,5 +1,22 @@
-{{!< defaultError}}
+{{!< default}}
+  {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
+    <title>Page Not Found</title>
+    <meta name="description" content="In other words, I couldn't find your page.">
 
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Page Not Found"/>
+    <meta property="og:site_name" content="{{@blog.title}}"/>
+    <meta property="og:description" content="In other words, I couldn't find your page."/>
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Page Not Found"/>
+    <meta name="twitter:description" content="In other words, I couldn't find your page."/>
+    <meta name="twitter:creator" content="@whaatt"/>
+  {{/contentFor}}
+  
   <article class="post-container post-container--single">
 
     <header class="post-header">
@@ -7,7 +24,7 @@
     </header>
 
     <section class="post page">
-      <p>In other words, I couldn't find your page. Don't fret, however! Check the <a href="/legacy">legacy</a> version of Skalon and then contact me if you're still having trouble. I know it can be frustrating when I'm scrapping my blogging platforms on a yearly basis, but I hope that <em>Ghost</em> will be here to stay. Viel Spaß!</p>
+      <p>In other words, I couldn't find your page. Don't fret, however! Check the <a href="/legacy">legacy</a> version of Skalon and then contact me if you're still having trouble. I know it can be frustrating when I'm scrapping my blogging platforms on a yearly basis, but I hope that <em>Ghost</em> will be here to stay for a while. Viel Spaß!</p>
     </section>
 
   </article>

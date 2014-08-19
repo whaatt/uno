@@ -1,4 +1,21 @@
 {{!< default}}
+   
+   {{#contentFor "meta"}}<!-- Classic Meta Tags -->
+    <title>Tag: {{tag.name}}</title>
+    <meta name="description" content="This tag page contains articles related to the topic of {{tag.name}}.">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="Tag: {{tag.name}}"/>
+    <meta property="og:description" content="This tag page contains articles related to the topic of {{tag.name}}."/>
+    <meta property="og:site_name" content="{{@blog.title}}"/>
+    <meta property="og:url" content="http://skalon.com{{url absolute="true"}}"/><!-- weird -->
+
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Tag: {{tag.name}}"/>
+    <meta name="twitter:description" content="This tag page contains articles related to the topic of {{tag.name}}."/>
+    <meta name="twitter:creator" content="@whaatt"/>{{/contentFor}}
 
   <h1 class="archive-title">Tag: {{tag.name}}</h1>
 
@@ -13,7 +30,7 @@
         <p class="excerpt">{{excerpt}}&hellip;</p>
         <div class="post-list__meta">
             <time datetime="{{date format="DD MMM YYYY"}}" class="post-list__meta--date date">{{date format="DD MMM YYYY"}}</time> &#8226;
-            <span class="post-list__meta--tags tags">{{#foreach tags}}<a href="{{url}}#blog" title="{{name}}">{{name}}</a>{{#if @last}}{{else}}, {{/if}}{{/foreach}}</span>
+            <span class="post-list__meta--tags tags">{{#foreach tags}}<a href="{{url}}" title="{{name}}">{{name}}</a>{{#if @last}}{{else}}, {{/if}}{{/foreach}}</span>
         </div>
         <hr class="post-list__divider" />
       </li>
