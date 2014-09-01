@@ -1231,7 +1231,7 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  /*background: url(../images/background-cover.jpg) top left no-repeat #666666;*/
+  background: radial-gradient(ellipse, rgba(51, 56, 86, 0.95) 20%, rgba(41, 43, 54, 1.0)), url(/glob/content/images/2014/Jul/road.jpg);
   background-size: cover; }
 
 .panel-cover--collapsed {

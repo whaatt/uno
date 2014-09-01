@@ -1,4 +1,4 @@
-<header class="panel-cover panel-cover--collapsed" {{#if @blog.cover}}style="background-image: url({{@blog.cover}})"{{/if}}>
+<header class="panel-cover panel-cover--collapsed" {{#if @blog.noCover}}style="background-image: url({{@blog.cover}})"{{/if}}>
   <div class="panel-main">
 
     <div class="panel-main__inner panel-inverted">
@@ -32,7 +32,5 @@
       </div>
 
     </div>
-
-    <div class="panel-cover--overlay cover-slate"></div>
   </div>
 </header>
