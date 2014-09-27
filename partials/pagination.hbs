@@ -2,10 +2,18 @@
 
 <nav class="pagination" role="navigation">
     {{#if prev}}
-        <a class="newer-posts pagination__newer btn btn-small btn-tertiary" href="{{pageUrl prev}}#blog">&larr; Newer Posts</a>
+        <a class="" href="{{pageUrl prev}}">
+    {{/if}}
+	&lt;
+    {{#if prev}}
+	</a>
     {{/if}}
     <span class="pagination__page-number">Page {{page}} of {{pages}}</span>
     {{#if next}}
-        <a class="older-posts pagination__older btn btn-small btn-tertiary" href="{{pageUrl next}}#blog">Older Posts &rarr;</a>
+        <a class="" href="{{pageUrl next}}">
+    {{/if}}
+	&gt;
+    {{#if next}}
+	</a>
     {{/if}}
 </nav>
