@@ -1,7 +1,7 @@
 {{!< default}}
-
 {{#post}}
-  {{#contentFor "meta"}}<!-- Classic Meta Tags -->
+  {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
     <title>{{title}}</title>
     <meta name="description" content="{{excerpt}}">
 
@@ -17,23 +17,33 @@
     <meta name="twitter:title" content="{{title}}"/>
     <meta name="twitter:description" content="{{excerpt}}"/>
     <meta name="twitter:creator" content="@whaatt"/>{{/contentFor}}
-  
-  <article class="post-container post-container--single">
 
+  <article class="post-container post-container--single">
     <header class="post-header">
       <div class="post-meta">
         <time datetime="{{date format="DD MMM YYYY"}}" class="post-meta__date date">{{date format="DD MMM YYYY"}}</time> &#8226; <span class="post-meta__tags tags">{{tags prefix="on "}}</span>
-        <!--<span class="post-meta__author author"><img src="{{author.image}}" alt="profile image for {{author.name}}" class="avatar post-meta__avatar" /> by {{author.name}}</span>-->
+        <span class="post-meta__author author"><img src="{{author.image}}" alt="profile image for {{author.name}}" class="avatar post-meta__avatar" /> by {{author.name}}</span>
       </div>
-      <h1 class="post-title">{{{title}}}</h1>
+      <h1 class="post-title">{{title}}</h1>
     </header>
 
     <section class="{{post_class}}">
       {{content}}
     </section>
-
   </article>
 
-  {{^has tag="Quiet"}} {{> comments}} {{/has}}
+  <div style="line-height: 1.3; width: 100%; display: inline-block; margin-bottom: 1.3em">
+    {{#prev_post}}<div style="float: left;">
+      <a href="{{url}}">&lt; Previous Post</a>
+      <br>{{title}}
+    </div>{{/prev_post}}
+    {{#next_post}}<div style="text-align: right; float: right;">
+      <a href="{{url}}">Next Post &gt;</a>
+      <br>{{title}}
+    </div>{{/next_post}}
+  </div>
 
+  {{#has tag="Discuss"}}
+    {{> comments}}
+  {{/has}}
 {{/post}}

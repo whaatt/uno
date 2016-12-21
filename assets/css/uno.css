@@ -1,4 +1,4 @@
-@import 'http://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
+@import 'https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto+Slab:300,400)';
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -1236,7 +1236,7 @@ hr {
   width: 100%;
   max-width: none;
   height: 100%;
-  background: radial-gradient(ellipse, rgba(51, 56, 86, 0.95) 20%, rgba(41, 43, 54, 1.0)), url(/glob/content/images/2014/Jul/road.jpg);
+  background: radial-gradient(ellipse, rgba(51, 56, 86, 0.95) 20%, rgba(41, 43, 54, 1.0)), url(/content/images/2014/Jul/Road.jpg);
   background-size: cover; }
 
 .panel-cover--collapsed {

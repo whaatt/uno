@@ -1,7 +1,7 @@
 {{!< default}}
-
 {{#post}}
-  {{#contentFor "meta"}}<!-- Classic Meta Tags -->
+  {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
     <title>{{title}}</title>
     <meta name="description" content="{{excerpt}}">
 
@@ -17,9 +17,8 @@
     <meta name="twitter:title" content="{{title}}"/>
     <meta name="twitter:description" content="{{excerpt}}"/>
     <meta name="twitter:creator" content="@whaatt"/>{{/contentFor}}
-  
-  <article class="post-container post-container--single">
 
+  <article class="post-container post-container--single">
     <header class="post-header">
       <h1 class="post-title">{{{title}}}</h1>
     </header>
@@ -27,7 +26,5 @@
     <section class="{{post_class}}">
       {{content}}
     </section>
-
   </article>
-
 {{/post}}

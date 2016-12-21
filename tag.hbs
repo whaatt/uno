@@ -1,28 +1,25 @@
 {{!< default}}
-   
-   {{#contentFor "meta"}}<!-- Classic Meta Tags -->
+   {{#contentFor "meta"}}
+    <!-- Classic Meta Tags -->
     <title>Tag: {{tag.name}}</title>
-    <meta name="description" content="This tag page contains articles related to the topic of {{tag.name}}.">
+    <meta name="description" content="This tag page contains articles related to the topic {{tag.name}}.">
 
     <!-- Open Graph Meta Tags -->
     <meta property="og:type" content="website"/>
     <meta property="og:title" content="Tag: {{tag.name}}"/>
-    <meta property="og:description" content="This tag page contains articles related to the topic of {{tag.name}}."/>
+    <meta property="og:description" content="This tag page contains articles related to the topic {{tag.name}}."/>
     <meta property="og:site_name" content="{{@blog.title}}"/>
-    <meta property="og:url" content="http://skalon.com{{url absolute="true"}}"/><!-- weird -->
+    <meta property="og:url" content="http://skalon.com{{url absolute="true"}}"/>
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="Tag: {{tag.name}}"/>
-    <meta name="twitter:description" content="This tag page contains articles related to the topic of {{tag.name}}."/>
+    <meta name="twitter:description" content="This tag page contains articles related to the topic {{tag.name}}."/>
     <meta name="twitter:creator" content="@whaatt"/>{{/contentFor}}
 
   <h1 class="archive-title">Tag: {{tag.name}}</h1>
-
   <hr class="section-title__divider" />
-
   <div class="main-post-list">
-
     <ol class="post-list">
       {{#foreach posts}}
       <li>
@@ -38,5 +35,4 @@
     </ol>
 
     {{pagination}}
-
   </div>

@@ -1,23 +1,29 @@
 <header class="panel-cover panel-cover--collapsed" {{#if @blog.noCover}}style="background-image: url({{@blog.cover}})"{{/if}}>
   <div class="panel-main">
-
     <div class="panel-main__inner panel-inverted">
-    <div class="panel-main__content">
-
+      <div class="panel-main__content">
         {{#if @blog.logo}}
-        <a href="{{@blog.url}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo" /></a>
+          <!-- a href="{{@blog.url}}"><img src="{{@blog.logo}}" width="80" alt="{{@blog.title}} logo" class="panel-cover__logo logo" /></a -->
         {{/if}}
+
         <h1 class="panel-cover__title panel-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-		<p class="panel-subtitle">Esse quam videri.</p>
-        {{!-- <span class="panel-cover__subtitle panel-subtitle">Visual Designer</span> --}}
+        <p class="panel-subtitle">Esse quam videri.</p>
         <hr class="panel-cover__divider" />
-        <p class="panel-cover__description">A personal soapbox and maker blog with musings on anything I feel like trolling or otherwise ranting about.</p>
-		<hr class="panel-cover__divider divider-two" />
-		<p class="panel-subtitle"><a href="{{@blog.url}}/resume">By</a> Sanjay Kannan
-        <br>So <a href="{{@blog.url}}/about">what</a> is Skalon?</p>
+
+        <p class="panel-cover__description">
+          <!-- A personal soapbox and maker blog with musings on anything I feel like trolling or otherwise ranting about.-->
+          A collective experience in modern waste management. Compiled and recycled by Sanjay Kannan.
+        </p>
+        
+        <hr class="panel-cover__divider divider-two" />
+        <p class="panel-subtitle">
+          <a href="{{@blog.url}}/self/">By</a> Sanjay Kannan
+          <br>So <a href="{{@blog.url}}/about/">what</a> is Skalon?
+        </p>
+
         <hr class="panel-cover__divider divider-two" />
         {{> social}}
-		
+
         <div class="navigation-wrapper" style="display: none;">
           <nav class="cover-navigation cover-navigation--primary">
             <ul class="navigation">
@@ -26,11 +32,8 @@
           </nav>
 
           {{> social}}
-
         </div>
-
       </div>
-
     </div>
   </div>
 </header>
