@@ -1036,6 +1036,10 @@ ol {
 ul {
   list-style-type: disc; }
 
+.hljs {
+  overflow-x: hidden;
+}
+
 code {
   /*white-space: nowrap;*/
   padding: 0em .1em;
